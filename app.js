@@ -2,13 +2,14 @@ require('dotenv').config()
 require('express-async-errors')
 const notFoundMiddleware = require('./middleware/not-found')
 const errorMiddleware = require('./middleware/error-handler')
+//Product routes import
 const products = require('./routes/products')
 
 //Express server creation. Port assign.
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
-//DB Connection
+//DB Connection import
 const connectDB = require('./db/connect')
 app.use(express.json())
 

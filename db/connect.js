@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+//Data base conection function declaration using monggose.s
 const connectDB = (url) => {
   return mongoose.connect(url, {
     useNewUrlParser: true,

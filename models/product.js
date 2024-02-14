@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+//Mongoose data model Schema to insert documents into mongodb database.
 const productSchema = new mongoose.Schema({
     name: {
         type: String,
